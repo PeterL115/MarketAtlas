@@ -1,0 +1,169 @@
+timezone_market: "America/New_York"
+
+# -----------------------------
+# Paths
+# -----------------------------
+data_root: "data"
+daily_dir: "data/daily"
+intraday_dir: "data/intraday_5m"
+session_state_dir: "data/session_state"
+levels_dir: "data/session_state/levels"
+intraday_5m_dir: "data/intraday_5m"
+
+features_intraday_dir: "features/intraday"
+features_intraday_latest_dir: "features/intraday_latest"
+
+# ✅ Step 8 (daily feature pipeline) outputs
+features_daily_dir: "features/daily"
+features_daily_latest_dir: "features/daily_latest"
+
+today_range_dir: "insights/today_range"
+today_range_log_dir: "insights/today_range_log"
+outputs_intraday_latest_dir: "outputs/intraday_latest"
+outputs_intraday_log_dir: "outputs/intraday_log"
+
+# ✅ (Later steps) EOD outputs root
+outputs_eod_plans_dir: "outputs/eod_plans"
+
+# -----------------------------
+# Models
+# -----------------------------
+models_dir: "models"
+
+features_regime_labels_dir: "features/regime_labels"
+features_regime_labels_latest_dir: "features/regime_labels_latest"
+regime_labels_dir: "data/regime_labels"
+regime_labels_latest_dir: "features/regime_labels_latest"
+
+outputs_eod_plans_dir: "outputs/eod_plans"
+outputs_eod_log_dir: "outputs/eod_log"
+
+
+
+# -----------------------------
+# i18n (global; used by insight generator / UI views)
+# -----------------------------
+i18n:
+  mode: "both"   # "en" | "zh" | "both"
+
+# -----------------------------
+# Session state
+# -----------------------------
+session_state:
+  opening_range_minutes: 30   # 15 or 30 are typical
+  compute_vwap_sessions:
+    - "RTH"                   # keep minimal; add PRE/AFT later if desired
+
+# -----------------------------
+# Data provider
+# -----------------------------
+provider:
+  name: "yfinance"
+  # yfinance does not require credentials
+
+# -----------------------------
+# Assets (keep your current structure; do NOT remove)
+# -----------------------------
+assets:
+  daily:
+    SPX: "^GSPC"
+    SPY: "SPY"
+    AAPL: "AAPL"
+    MSFT: "MSFT"
+    AMZN: "AMZN"
+    GOOGL: "GOOGL"
+    META: "META"
+    NVDA: "NVDA"
+    TSLA: "TSLA"
+    VIX: "^VIX"
+    VXX: "VXX"
+
+  intraday_5m:
+    SPX: "^GSPC"
+    SPY: "SPY"
+    AAPL: "AAPL"
+    MSFT: "MSFT"
+    AMZN: "AMZN"
+    GOOGL: "GOOGL"
+    META: "META"
+    NVDA: "NVDA"
+    TSLA: "TSLA"
+    VIX: "^VIX"
+    VXX: "VXX"
+
+
+# -----------------------------
+# Asset aliases (safe add; helps Step 8+ if code expects these names)
+# -----------------------------
+daily_assets:
+  SPX: "^GSPC"
+  SPY: "SPY"
+  AAPL: "AAPL"
+  MSFT: "MSFT"
+  AMZN: "AMZN"
+  GOOGL: "GOOGL"
+  META: "META"
+  NVDA: "NVDA"
+  TSLA: "TSLA"
+
+
+intraday_assets:
+  SPX: "^GSPC"
+  SPY: "SPY"
+  AAPL: "AAPL"
+  MSFT: "MSFT"
+  AMZN: "AMZN"
+  GOOGL: "GOOGL"
+  META: "META"
+  NVDA: "NVDA"
+  TSLA: "TSLA"
+
+
+# -----------------------------
+# Ingestion settings
+# -----------------------------
+ingestion:
+  daily:
+    default_start: "2015-01-01"
+
+  intraday_5m:
+    default_lookback_days: 5
+    include_extended_hours: true
+    retention_days: 60
+    cleanup_on_run: true
+
+# -----------------------------
+# Levels module settings
+# -----------------------------
+levels:
+  pivot_lookback_days: 120
+  pivot_left_right: 2
+  atr_period: 14
+  zone_atr_mult: 0.20
+  min_zone_bp: 8
+  max_levels: 40
+  include_contextual_premarket: true
+  pivot_max_atr_distance_up: 3
+  pivot_max_atr_distance_down: 3
+
+# -----------------------------
+# Intraday feature pipeline settings
+# -----------------------------
+intraday_features:
+  rv_window_bars: 12
+  er_window_bars: 12
+  overlap_window_bars: 12
+  level_pressure_atr: 1.0
+
+# -----------------------------
+# ✅ Step 8: Daily feature pipeline settings
+# (kept intentionally small; you can expand later)
+# -----------------------------
+daily_features:
+  atr_window: 14
+  rv_window: 20
+  er_window: 20
+  slope_window: 20
+  hhll_window: 20
+  vol_window: 20
+  min_rows: 60
