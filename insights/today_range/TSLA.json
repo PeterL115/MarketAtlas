@@ -1,0 +1,46 @@
+{
+  "ticker": "TSLA",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T19:55:00-05:00",
+  "session": "AFT",
+  "last_price": 437.4,
+  "inputs": {
+    "rv_5m": 0.00026766993540654774,
+    "atr_daily": 13.802854265485491,
+    "bars_remaining": 1,
+    "remaining_var_frac": 0.01282051282051282,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.11707882974682397,
+    "sigma_atr_pts": 1.5628654890453995
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 1.3802854265485491,
+    "band_68": {
+      "low": 436.01971457345144,
+      "high": 438.7802854265485,
+      "width": 2.7605708530970787
+    },
+    "band_95": {
+      "low": 434.6946405639648,
+      "high": 440.10535943603514,
+      "width": 5.410718872070333
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 437.15,
+    "high_so_far": 460.3078,
+    "band_68": {
+      "low": 436.01971457345144,
+      "high": 460.3078,
+      "width": 24.288085426548548
+    },
+    "band_95": {
+      "low": 434.6946405639648,
+      "high": 460.3078,
+      "width": 25.613159436035176
+    }
+  }
+}

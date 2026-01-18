@@ -1,0 +1,46 @@
+{
+  "ticker": "MSFT",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T19:55:00-05:00",
+  "session": "AFT",
+  "last_price": 460.515,
+  "inputs": {
+    "rv_5m": 0.00021319473858634626,
+    "atr_daily": 8.237858363560267,
+    "bars_remaining": 1,
+    "remaining_var_frac": 0.01282051282051282,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.09817937504009125,
+    "sigma_atr_pts": 0.9327537835595273
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 0.8237858363560268,
+    "band_68": {
+      "low": 459.69121416364396,
+      "high": 461.338785836356,
+      "width": 1.647571672712047
+    },
+    "band_95": {
+      "low": 458.90037976074217,
+      "high": 462.1296202392578,
+      "width": 3.229240478515635
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 430.6063,
+    "high_so_far": 482.2891,
+    "band_68": {
+      "low": 430.6063,
+      "high": 482.2891,
+      "width": 51.68280000000004
+    },
+    "band_95": {
+      "low": 430.6063,
+      "high": 482.2891,
+      "width": 51.68280000000004
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ticker": "VXX",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T19:55:00-05:00",
+  "session": "AFT",
+  "last_price": 26.46,
+  "inputs": {
+    "rv_5m": 0.0012435823801785581,
+    "atr_daily": 0.7268569128853934,
+    "bars_remaining": 1,
+    "remaining_var_frac": 0.01282051282051282,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.03290518977952465,
+    "sigma_atr_pts": 0.08230033895693702
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 0.07268569128853934,
+    "band_68": {
+      "low": 26.38731430871146,
+      "high": 26.532685691288542,
+      "width": 0.14537138257708193
+    },
+    "band_95": {
+      "low": 26.317536045074462,
+      "high": 26.60246395492554,
+      "width": 0.28492790985107774
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 26.3933,
+    "high_so_far": 26.54,
+    "band_68": {
+      "low": 26.38731430871146,
+      "high": 26.54,
+      "width": 0.15268569128853926
+    },
+    "band_95": {
+      "low": 26.317536045074462,
+      "high": 26.60246395492554,
+      "width": 0.28492790985107774
+    }
+  }
+}

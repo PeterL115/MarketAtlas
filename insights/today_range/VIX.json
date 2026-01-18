@@ -1,0 +1,46 @@
+{
+  "ticker": "VIX",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T16:15:00-05:00",
+  "session": "AFT",
+  "last_price": 15.86,
+  "inputs": {
+    "rv_5m": 0.0035709108785526647,
+    "atr_daily": 1.1778572627476283,
+    "bars_remaining": 45,
+    "remaining_var_frac": 0.5769230769230769,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.37991675859405255,
+    "sigma_atr_pts": 0.8946468140924497
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 0.37991675859405255,
+    "band_68": {
+      "low": 15.480083241405946,
+      "high": 16.239916758594052,
+      "width": 0.7598335171881061
+    },
+    "band_95": {
+      "low": 15.115363153155656,
+      "high": 16.604636846844343,
+      "width": 1.4892736936886877
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 15.84,
+    "high_so_far": 15.91,
+    "band_68": {
+      "low": 15.480083241405946,
+      "high": 16.239916758594052,
+      "width": 0.7598335171881061
+    },
+    "band_95": {
+      "low": 15.115363153155656,
+      "high": 16.604636846844343,
+      "width": 1.4892736936886877
+    }
+  }
+}

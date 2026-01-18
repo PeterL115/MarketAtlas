@@ -1,0 +1,46 @@
+{
+  "ticker": "SPY",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T19:55:00-05:00",
+  "session": "AFT",
+  "last_price": 691.4199,
+  "inputs": {
+    "rv_5m": 0.00014894074866129273,
+    "atr_daily": 5.060725620814732,
+    "bars_remaining": 1,
+    "remaining_var_frac": 0.01282051282051282,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.10298059754531615,
+    "sigma_atr_pts": 0.5730143396555673
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 0.5060725620814732,
+    "band_68": {
+      "low": 690.9138274379185,
+      "high": 691.9259725620815,
+      "width": 1.0121451241629984
+    },
+    "band_95": {
+      "low": 690.4279977783203,
+      "high": 692.4118022216796,
+      "width": 1.983804443359304
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 691.3,
+    "high_so_far": 693.65,
+    "band_68": {
+      "low": 690.9138274379185,
+      "high": 693.65,
+      "width": 2.7361725620814923
+    },
+    "band_95": {
+      "low": 690.4279977783203,
+      "high": 693.65,
+      "width": 3.222002221679645
+    }
+  }
+}

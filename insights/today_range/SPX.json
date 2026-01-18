@@ -1,0 +1,46 @@
+{
+  "ticker": "SPX",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T16:40:00-05:00",
+  "session": "AFT",
+  "last_price": 6940.01,
+  "inputs": {
+    "rv_5m": 0.000397504752541351,
+    "atr_daily": 50.59852818080357,
+    "bars_remaining": 40,
+    "remaining_var_frac": 0.5128205128205128,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 17.447468275367143,
+    "sigma_atr_pts": 36.23435863477684
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 17.447468275367143,
+    "band_68": {
+      "low": 6922.562531724633,
+      "high": 6957.457468275367,
+      "width": 34.8949365507342
+    },
+    "band_95": {
+      "low": 6905.812962180281,
+      "high": 6974.2070378197195,
+      "width": 68.3940756394386
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 6939.58,
+    "high_so_far": 6940.18,
+    "band_68": {
+      "low": 6922.562531724633,
+      "high": 6957.457468275367,
+      "width": 34.8949365507342
+    },
+    "band_95": {
+      "low": 6905.812962180281,
+      "high": 6974.2070378197195,
+      "width": 68.3940756394386
+    }
+  }
+}

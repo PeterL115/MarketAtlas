@@ -1,0 +1,46 @@
+{
+  "ticker": "AAPL",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T19:55:00-05:00",
+  "session": "AFT",
+  "last_price": 255.25,
+  "inputs": {
+    "rv_5m": 0.00018054042946052427,
+    "atr_daily": 4.204281398228237,
+    "bars_remaining": 1,
+    "remaining_var_frac": 0.01282051282051282,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.046082944619798824,
+    "sigma_atr_pts": 0.47604112722951625
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 0.42042813982282373,
+    "band_68": {
+      "low": 254.82957186017717,
+      "high": 255.67042813982283,
+      "width": 0.8408562796456636
+    },
+    "band_95": {
+      "low": 254.42596084594726,
+      "high": 256.07403915405274,
+      "width": 1.6480783081054824
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 242.3546,
+    "high_so_far": 255.58,
+    "band_68": {
+      "low": 242.3546,
+      "high": 255.67042813982283,
+      "width": 13.315828139822827
+    },
+    "band_95": {
+      "low": 242.3546,
+      "high": 256.07403915405274,
+      "width": 13.719439154052736
+    }
+  }
+}

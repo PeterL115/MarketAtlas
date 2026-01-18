@@ -1,0 +1,46 @@
+{
+  "ticker": "AMZN",
+  "day": "2026-01-16",
+  "market_tz": "America/New_York",
+  "asof_ts": "2026-01-16T19:55:00-05:00",
+  "session": "AFT",
+  "last_price": 238.82,
+  "inputs": {
+    "rv_5m": 0.00013946216597031925,
+    "atr_daily": 5.487857273646763,
+    "bars_remaining": 1,
+    "remaining_var_frac": 0.01282051282051282,
+    "blend_weight_intraday": 1.0,
+    "sigma_source": "blend_var",
+    "sigma_intraday_pts": 0.03330635447703164,
+    "sigma_atr_pts": 0.6213774757613604
+  },
+  "remaining_session": {
+    "end_ts": "2026-01-16T20:00:00-05:00",
+    "sigma_pts": 0.5487857273646763,
+    "band_68": {
+      "low": 238.27121427263532,
+      "high": 239.36878572736467,
+      "width": 1.0975714547293478
+    },
+    "band_95": {
+      "low": 237.74437997436522,
+      "high": 239.89562002563477,
+      "width": 2.1512400512695535
+    }
+  },
+  "conditional_full_day": {
+    "low_so_far": 227.48,
+    "high_so_far": 248.748,
+    "band_68": {
+      "low": 227.48,
+      "high": 248.748,
+      "width": 21.268
+    },
+    "band_95": {
+      "low": 227.48,
+      "high": 248.748,
+      "width": 21.268
+    }
+  }
+}
