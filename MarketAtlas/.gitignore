@@ -1,0 +1,45 @@
+# ── UI (private) ──────────────────────────────────────────────
+app/ui_streamlit.py
+app/ui_streamlit.py-
+app/ui_helpers.py
+
+# ── Generated data (large, local only) ────────────────────────
+data/
+features/
+outputs/
+insights/today_range/
+insights/today_range_log/
+models/
+
+# ── Config with local paths (keep template, not actual) ───────
+# config/app.yaml   ← uncomment this line if your yaml has private paths/keys
+
+# ── Python cache ──────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ───────────────────────────────────────
+venv/
+.venv/
+env/
+.env
+
+# ── IDE & OS ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Secrets ───────────────────────────────────────────────────
+*.key
+*.pem
+secrets.yaml
+secrets.json
